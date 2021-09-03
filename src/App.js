@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Section from "./components/Section";
-import FeedbackOptions from "./components/FeedbackOptions";
-import Statistics from "./components/Statistics";
+import React, { Component } from 'react';
+import Section from './components/Section';
+import FeedbackOptions from './components/FeedbackOptions';
+import Statistics from './components/Statistics';
 // import "./App.css";
 
 class App extends Component {
@@ -12,19 +12,19 @@ class App extends Component {
   };
 
   onClickGood = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       good: prevState.good + 1,
     }));
   };
 
   onClickNeutral = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       neutral: prevState.neutral + 1,
     }));
   };
 
   onClickBad = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       bad: prevState.bad + 1,
     }));
   };
@@ -51,7 +51,7 @@ class App extends Component {
             onClickGood={onClickGood}
             onClickNeutral={onClickNeutral}
             onClickBad={onClickBad}
-          ></FeedbackOptions>
+          />
 
           <Statistics
             good={good}
@@ -59,7 +59,7 @@ class App extends Component {
             bad={bad}
             total={total}
             positivePercentage={positivePercentage}
-          ></Statistics>
+          />
         </Section>
       </div>
     );
