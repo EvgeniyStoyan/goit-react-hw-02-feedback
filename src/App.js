@@ -46,8 +46,9 @@ class App extends Component {
     const { onClickGood, onClickNeutral, onClickBad } = this;
     return (
       <div>
-        <Section title="Please leave feedback">
+        <Section>
           <FeedbackOptions
+            title="Please leave feedback"
             onClickGood={onClickGood}
             onClickNeutral={onClickNeutral}
             onClickBad={onClickBad}

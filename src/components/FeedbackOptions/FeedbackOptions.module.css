@@ -30,3 +30,13 @@ button:last-child {
   font-weight: 700;
   line-height: 1.19;
 }
+
+.title_reviews {
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.19;
+}
