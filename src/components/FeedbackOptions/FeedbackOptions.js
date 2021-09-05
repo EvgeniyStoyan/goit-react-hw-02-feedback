@@ -9,7 +9,7 @@ const FeedbackOptions = ({
 }) => {
   return (
     <div className={s.container_buttons}>
-      <h2 className={s.title_reviews}>{title}</h2>
+      {title && <h2 className={s.title_reviews}>{title}</h2>}
       <button type="button" onClick={onClickGood}>
         GOOD
       </button>
